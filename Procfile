@@ -1,0 +1,1 @@
+web: java -cp target/classes:gittarget/dependency/* ru.lanwen.tests.jersey.heroku.heroku.Main

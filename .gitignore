@@ -1,0 +1,11 @@
+.classpath
+.project
+reports
+run_selenium.bat
+run_test.bat
+nbactions.xml
+target
+.idea
+*.iml
+disk.iml
+.DS_Store
