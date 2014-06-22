@@ -8,13 +8,11 @@ import org.glassfish.jersey.test.JerseyTest;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-import ru.lanwen.tests.jersey.heroku.MyResource;
-
-public class MyResourceTest extends JerseyTest {
+public class RootResourceTest extends JerseyTest {
 
     @Override
     protected Application configure() {
-        return new ResourceConfig(MyResource.class);
+        return new ResourceConfig(RootResource.class);
     }
 
     /**

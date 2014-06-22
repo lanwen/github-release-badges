@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
  * Root resource (exposed at "myresource" path)
  */
 @Path("/")
-public class MyResource {
+public class RootResource {
 
     /**
      * Method handling HTTP GET requests. The returned object will be sent
