@@ -5,11 +5,15 @@ Put together shields.io + gthub.api + java (jersey+jetty) + heroku produce this 
 It duplicates some original shields.io functionality, but it can be simple java REST example.
 
 ## Usage
-Common:
-`http://github-release-version.herokuapp.com/github/{owner}/{repo}/release.{png|svg}[?style=flat]`
+Common: 
+```
+http://github-release-version.herokuapp.com/github/{owner}/{repo}/release.{png|svg}[?style=flat]
+```
 
-Markdown:
-`[![release](http://github-release-version.herokuapp.com/github/allure-framework/allure-core/release.svg?style=flat)](https://github.com/allure-framework/allure-core/releases/latest)`
+Markdown: 
+```
+[![release](http://github-release-version.herokuapp.com/github/allure-framework/allure-core/release.svg?style=flat)](https://github.com/allure-framework/allure-core/releases/latest)
+``` 
 [![release](http://github-release-version.herokuapp.com/github/allure-framework/allure-core/release.svg?style=flat)](https://github.com/allure-framework/allure-core/releases/latest) 
 
 ## Upload to heroku 
