@@ -7,7 +7,7 @@ package ru.lanwen.tests.jersey.heroku.misc;
  */
 public final class Defaults {
 
-    public static final String TOKEN = "5a379df57152150853751fbab63809d03dbd8661";
+    public static final String TOKEN = System.getProperty("github.token", "wrong_token");
 
 
     public static final String GITHUB_BASE_URI = "https://api.github.com";

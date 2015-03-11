@@ -8,10 +8,12 @@ import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.test.JerseyTest;
 
 import org.junit.Test;
+import ru.lanwen.tests.jersey.heroku.misc.Defaults;
 
 import static java.lang.String.format;
 import static org.apache.commons.lang3.StringUtils.isEmpty;
 import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.junit.Assert.assertThat;
@@ -77,6 +79,12 @@ public class RootResourceTest extends JerseyTest {
 
         assertThat("Should return different badges on different styles",
                 responseSvgNoStyle.getLength(), not(responseSvgFlatStyle.getLength()));
+    }
+
+
+    @Test
+    public void shouldSetTokenProp() {
+        assertThat("Should set wring token by default", Defaults.TOKEN, equalTo("wrong_token"));
     }
 
 
