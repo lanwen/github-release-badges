@@ -49,7 +49,9 @@ public class Github {
         }
 
         public String tagName(int index) {
-            return read(content, format("$.[%d].tag_name", index));
+            String tag = read(content, format("$.[%d].tag_name", index));
+            getLogger(this.getClass()).info("[Tag got: {} (from {}...)]", tag, content.substring(0, 50));
+            return tag;
         }
 
         public boolean isPrerelease(int index) {
