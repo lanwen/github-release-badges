@@ -22,5 +22,7 @@ Markdown:
 heroku login
 heroku create [app name]
 git push heroku master
+
+heroku config:set GITHUB_TOKEN=<token>
 heroku open
 ```

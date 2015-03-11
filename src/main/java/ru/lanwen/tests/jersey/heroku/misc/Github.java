@@ -49,6 +49,7 @@ public class Github {
         }
 
         public String tagName(int index) {
+            getLogger(this.getClass()).info("[Content: {}]", content);
             String tag = read(content, format("$.[%d].tag_name", index));
             getLogger(this.getClass()).info("[Tag got: {} (from {}...)]", tag, content.substring(0, 50));
             return tag;
