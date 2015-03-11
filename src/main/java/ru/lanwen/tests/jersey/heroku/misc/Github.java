@@ -45,13 +45,14 @@ public class Github {
         private String content;
 
         public Releases(String content) {
+            getLogger(this.getClass()).trace("Content is: {}", content);
             this.content = content;
         }
 
         public String tagName(int index) {
-            getLogger(this.getClass()).info("[Content: {}]", content);
             String tag = read(content, format("$.[%d].tag_name", index));
-            getLogger(this.getClass()).info("[Tag got: {} (from {}...)]", tag, content.substring(0, 50));
+            getLogger(this.getClass()).info("[Tag got: {} (from {}...)]", tag,
+                    content.substring(0, content.length() > 50 ? 50 : content.length()));
             return tag;
         }
 
