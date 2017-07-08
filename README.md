@@ -1,7 +1,7 @@
 Badges for GitHub releases
 =====================
 
-Put together shields.io + gthub.api + java (jersey+jetty) + heroku produce this project. 
+Put together shields.io + github.api + java (jersey+jetty) + heroku produce this project. 
 It duplicates some original shields.io functionality, but it can be simple java REST example.
 
 ## Usage
